@@ -1,10 +1,10 @@
 # Sistema IoT para Monitoreo de Condiciones Microclimáticas en el Cultivo de Mandarina
 
-## 📋 Descripción del Proyecto
+##  Descripción del Proyecto
 
 Plataforma IoT profesional para monitoreo en tiempo real de condiciones microclimáticas en cultivos de mandarina (Citrus reticulata), con análisis predictivo basado en IA, control remoto de robot móvil, y visualización avanzada de datos.
 
-## 🏗️ Arquitectura del Sistema
+##  Arquitectura del Sistema
 
 ### Capa de Dispositivos
 - **Nodos ESP32 Fijos**: Sensores DS18B20 (temp), SHT31 (humedad), BH1750 (luz), capacitivo (suelo)
@@ -26,7 +26,7 @@ Plataforma IoT profesional para monitoreo en tiempo real de condiciones microcli
 - Análisis predictivo con IA (OpenAI GPT-4o-mini)
 - Alertas inteligentes
 
-## 🚀 Inicio Rápido
+##  Inicio Rápido
 
 ### Credenciales por Defecto
 ```
@@ -39,7 +39,7 @@ Contraseña: admin123
 - **API Backend**: https://smartorchard.preview.emergentagent.com/api
 - **Grafana**: http://localhost:3001 (acceso local)
 
-## 📊 Endpoints API Principales
+##  Endpoints API Principales
 
 ### Autenticación
 - `POST /api/auth/login` - Iniciar sesión
@@ -65,7 +65,7 @@ Contraseña: admin123
 ### Sistema
 - `GET /api/system/info` - Información del sistema
 
-## 🗂️ Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 /app/
@@ -103,7 +103,7 @@ Contraseña: admin123
 └── README.md
 ```
 
-## 🔧 Variables de Entorno
+## Variables de Entorno
 
 ### Backend (.env)
 ```bash
@@ -175,7 +175,7 @@ ENABLE_HEALTH_CHECK=false
 }
 ```
 
-## 🗄️ Esquema de Base de Datos
+## Esquema de Base de Datos
 
 ### SQLite (usuarios y alertas)
 
@@ -230,7 +230,7 @@ CREATE TABLE robot_commands (
 - **Timestamp**: Auto-generado
 - **Retención**: 1 año (configurable)
 
-## 🤖 Comandos del Robot
+## Comandos del Robot
 
 ### Manuales
 - `move_forward` - Avanzar
@@ -245,13 +245,13 @@ CREATE TABLE robot_commands (
 - `stop_patrol` - Detener patrullaje
 - `go_to_position` - Ir a posición GPS específica
 
-## 🧠 Análisis con IA
+## Análisis con IA
 
 El sistema utiliza OpenAI GPT-4o-mini para:
 - Análisis de tendencias de temperatura, humedad, luminosidad
 - Predicción de estrés hídrico
 - Detección de anomalías
-- Generación de recomendaciones agronómicas
+- Generación de recomendaciones
 - Evaluación de riesgo del cultivo
 
 ### Condiciones Óptimas para Mandarina
@@ -260,7 +260,7 @@ El sistema utiliza OpenAI GPT-4o-mini para:
 - **Humedad del suelo**: 40-70%
 - **Luminosidad**: 30,000-50,000 lux
 
-## 🔐 Seguridad
+##  Seguridad
 
 - Autenticación JWT con tokens de 24 horas
 - Contraseñas hasheadas con bcrypt
@@ -268,16 +268,8 @@ El sistema utiliza OpenAI GPT-4o-mini para:
 - HTTPS para acceso web
 - Roles de usuario (admin/agricultor)
 
-## 📈 Modo de Simulación
 
-El sistema puede funcionar en modo simulación cuando:
-- InfluxDB no está configurado → Genera datos simulados
-- MQTT no está disponible → Opera en modo local
-- Dispositivos ESP32 no conectados → Usa datos de prueba
-
-Esto permite desarrollo y demostración sin hardware físico.
-
-## 🛠️ Comandos Útiles
+## Comandos Útiles
 
 ### Backend
 ```bash
@@ -317,7 +309,7 @@ curl -H "Authorization: Bearer $TOKEN" \
   "$API_URL/api/sensors/latest"
 ```
 
-## 📚 Próximos Pasos
+## Próximos Pasos
 
 ### Para Producción
 1. **Instalar y configurar InfluxDB**
@@ -354,19 +346,19 @@ curl -H "Authorization: Bearer $TOKEN" \
 - Aplicación móvil nativa
 - Multi-cultivo / Multi-parcela
 
-## 📞 Soporte
+## Soporte
 
 Este es un proyecto universitario académico. Para preguntas o problemas:
 - Revisar logs en `/var/log/supervisor/`
 - Verificar estado de servicios: `sudo supervisorctl status`
 - Consultar documentación de cada componente
 
-## 📄 Licencia
+## Licencia
 
-Proyecto académico - Universidad [Nombre] - 2025
+Proyecto académico - Universidad Técnica del Norte - Facultad de Ingeniería en Ciencias Aplicadas -  Carrera de Telecomunicaciones - 2026
 
 ---
 
-**Desarrollado por**: [Tu Nombre]
-**Curso**: Proyecto Semestral - IoT y Sistemas Agrícolas
+**Desarrollado por**: Jhojan Rivera
+**Curso**: Proyecto Semestral - Seguridad eb Redes y Sistemas de Comunicación Multimedia
 **Fecha**: Enero 2025
