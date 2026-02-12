@@ -1,0 +1,15 @@
+{
+  "simulation_mode": true,
+  "mqtt": {
+    "broker": "localhost",
+    "port": "1883",
+    "username": "",
+    "password": "",
+    "enabled": false
+  },
+  "user_simulations": {
+    "2": true,
+    "3": true,
+    "5": true
+  }
+}
