@@ -26,19 +26,6 @@ Plataforma IoT profesional para monitoreo en tiempo real de condiciones microcli
 - Análisis predictivo con IA (OpenAI GPT-4o-mini)
 - Alertas inteligentes
 
-##  Inicio Rápido
-
-### Credenciales por Defecto
-```
-Usuario: admin
-Contraseña: admin123
-```
-
-### Acceso a la Plataforma
-- **Frontend Web**: https://smartorchard.preview.emergentagent.com
-- **API Backend**: https://smartorchard.preview.emergentagent.com/api
-- **Grafana**: http://localhost:3001 (acceso local)
-
 ##  Endpoints API Principales
 
 ### Autenticación
